@@ -7,5 +7,7 @@ package com.liquor.java8.demo.exer;
  * @CreateDate:2020-12-22 22:29
  * @Modify:
  **/
-public class MyFunction2 {
+@FunctionalInterface
+public interface MyFunction2<T, R> {
+    R getValue(T t1, T t2);
 }
