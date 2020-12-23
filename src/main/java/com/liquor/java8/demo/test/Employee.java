@@ -16,6 +16,15 @@ public class Employee {
 
     private double salary;
 
+    public Employee(String s) {
+        this.name = s;
+    }
+
+    public Employee(String s, Integer integer) {
+        this.name = s;
+        this.age = integer;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -67,5 +76,9 @@ public class Employee {
     }
 
     public Employee() {
+    }
+
+    public String show() {
+        return "show()";
     }
 }
