@@ -68,7 +68,7 @@ public class TestStreamAPI1 {
         stream3.forEach(System.out::println);
     }
 
-    private static Stream<Character> filterCharacter(String str) {
+    public static Stream<Character> filterCharacter(String str) {
         List<Character> list = new ArrayList<>();
 
         for (Character ch : str.toCharArray()) {
