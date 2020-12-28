@@ -11,17 +11,10 @@ import java.util.Optional;
  */
 //注意：Optional 不能被序列化
 public class NewMan {
+
     private Godness god;
 
     private Optional<Godness> godness =Optional.empty();
-
-    public Godness getGod() {
-        return god;
-    }
-
-    public void setGod(Godness god) {
-        this.god = god;
-    }
 
     public Optional<Godness> getGodness() {
         return godness;
@@ -37,6 +30,10 @@ public class NewMan {
                 "god=" + god +
                 ", godness=" + godness +
                 '}';
+    }
+
+    public NewMan(Optional<Godness> godness) {
+        this.godness = godness;
     }
 
     public NewMan() {
